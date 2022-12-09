@@ -1,0 +1,61 @@
+
+h1{
+    
+    text-align: center;
+    background-size: 30rem;
+}
+body
+{
+    background-image:url("figuras_·D_AdobeExpress.gif")
+}
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    background: #ffffff;
+  }
+  
+  a:active {
+    color: #fdfdfd;
+  }
+div
+{
+    text-align: center;
+}
+.area {
+
+   background-color: black;
+   padding: 40px;
+}
+.perimetro {
+    padding: 40px;
+    background-color: blue;
+}
+label{
+    color: #fdfdfd;
+}
+.borde {
+    margin: 50px;
+    background-size: 70rem;
+    
+}
+p{
+  color: #fdfdfd;
+}
