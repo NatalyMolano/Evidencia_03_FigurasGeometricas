@@ -1,7 +1,6 @@
 package figurasGeometricas;
 import java.util.Scanner;
-public class menu {
-class 
+public class menu { 
 int op;
         do{
 
