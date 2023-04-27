@@ -2,6 +2,9 @@ package figurasGeometricas;
 import java.util.Scanner;
 public class menu { 
 int op;
+        
+        public static void opcion{
+                
         do{
 
         
@@ -74,4 +77,5 @@ int op;
             }
         }while(op!=4);
         /*Leer lo que es herencia y hacer el reto */
+        }
 }
