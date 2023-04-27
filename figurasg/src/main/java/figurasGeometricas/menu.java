@@ -1,13 +1,16 @@
 package figurasGeometricas;
 import java.util.Scanner;
 public class menu { 
-int op;
-        
-        public static void opcion{
-                
+    public static void operacion()
+    {
+        Scanner lectura = new Scanner(System.in);
+        decagono calcular = new decagono();
+        triangulo triangulo= new triangulo();
+        rombo rombo = new rombo();
+        int op;
         do{
 
-        
+            
             System.out.println("\nBienvenido seleccione una de las figuras geomatricas \nelija 1 si desea la figura decagono\nelija 2 si dese la figura triangulo\nelija 3 si desea la figura rombo\nelija 4 para salir ");
             op = lectura.nextInt();
             if(op==1)
@@ -76,6 +79,6 @@ int op;
                 System.out.println("Ingreso un dato invalido");
             }
         }while(op!=4);
-        /*Leer lo que es herencia y hacer el reto */
-        }
+}
+    /*Leer lo que es herencia y hacer el reto */
 }
