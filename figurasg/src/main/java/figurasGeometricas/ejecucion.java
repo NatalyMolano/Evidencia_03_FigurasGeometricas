@@ -2,20 +2,18 @@ package figurasGeometricas;
 import java.util.Scanner;
 public class ejecucion {
     
-   
+    
     public static void main(String[]args)
     {
-        Opciones();
+         Opciones(); 
+        
         
     }
     public static void Opciones()
     {
-        Scanner lectura = new Scanner(System.in);
-        int op;
-        
-        
-       
-            System.out.println("\nBienvenido seleccione una de las figuras geomatricas \nelija 1 si desea la figura decagono\nelija 2 si dese la figura triangulo\nelija 3 si desea la figura rombo\nelija 4 para salir ");
+            Scanner lectura = new Scanner(System.in);
+            int op=0;
+            System.out.println("\nBienvenido seleccione una de las figuras geomatricas \nelija 1 si desea la figura decagono\nelija 2 si dese la figura triangulo\nelija 3 si desea la figura rombo ");
             op = lectura.nextInt();
             if(op==1){ Decagono(); }
             else if(op==2){ Rombo(); }
@@ -25,7 +23,7 @@ public class ejecucion {
     }
     public static void Decagono(){
         Scanner lectura = new Scanner(System.in);
-       
+        decagono calcular = new decagono();
         triangulo triangulo= new triangulo();
         rombo rombo = new rombo();
         int op;
@@ -46,6 +44,9 @@ public class ejecucion {
 
     public static void Rombo(){
         Scanner lectura = new Scanner(System.in);
+        decagono calcular = new decagono();
+        triangulo triangulo= new triangulo();
+        rombo rombo = new rombo();
         int op;
         System.out.println("Bienvenido a la figura del ROMBO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
         op = lectura.nextInt();
