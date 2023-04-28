@@ -11,7 +11,6 @@ public class ejecucion {
     public static void Opciones()
     {
         Scanner lectura = new Scanner(System.in);
-       rombo rombo = new rombo();
         int op;
         
         
