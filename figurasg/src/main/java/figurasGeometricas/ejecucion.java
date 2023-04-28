@@ -49,9 +49,6 @@ public class ejecucion {
 
     public static void Rombo(){
         Scanner lectura = new Scanner(System.in);
-        decagono calcular = new decagono();
-        triangulo triangulo= new triangulo();
-        rombo rombo = new rombo();
         int op;
         System.out.println("Bienvenido a la figura del ROMBO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
         op = lectura.nextInt();
