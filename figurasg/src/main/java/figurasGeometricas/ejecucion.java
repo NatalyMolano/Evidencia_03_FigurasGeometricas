@@ -28,7 +28,7 @@ public class ejecucion {
     }
     public static void Decagono(){
         Scanner lectura = new Scanner(System.in);
-        decagono calcular = new decagono();
+       
         triangulo triangulo= new triangulo();
         rombo rombo = new rombo();
         int op;
