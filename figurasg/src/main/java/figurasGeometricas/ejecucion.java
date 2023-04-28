@@ -14,14 +14,14 @@ public class ejecucion {
         int op;
         
         
-        do{
+       
             System.out.println("\nBienvenido seleccione una de las figuras geomatricas \nelija 1 si desea la figura decagono\nelija 2 si dese la figura triangulo\nelija 3 si desea la figura rombo\nelija 4 para salir ");
             op = lectura.nextInt();
             if(op==1){ Decagono(); }
             else if(op==2){ Rombo(); }
             else if(op==3) {triangulo();}
             else{ System.out.println("Ingreso un dato invalido");}
-        }while(op!=4);
+        
     }
     public static void Decagono(){
         Scanner lectura = new Scanner(System.in);
