@@ -22,7 +22,24 @@ public class ejecucion {
         
     }
     public static void Decagono(){
-      
+        Scanner lectura = new Scanner(System.in);
+        decagono calcular = new decagono();
+        triangulo triangulo= new triangulo();
+        rombo rombo = new rombo();
+        int op;
+        System.out.println("Bienvenido a la figura del DECAGONO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
+        op = lectura.nextInt();
+        if(op==1){
+            System.out.println("Ingrese la longitud de un lado del decagono");
+            calcular.setLado(lectura.nextDouble());
+            System.out.println("Ingrese la apotema del decagono");
+            calcular.setApotema(lectura.nextDouble());
+            calcular.calcularArea(calcular.getLado(), calcular.getApotema());
+        } else if(op==2) {
+            System.out.println("Ingrese la longitud de un lado del decagono");
+            calcular.setLongitud(lectura.nextDouble());
+            calcular.calcularPerimetro(calcular.getLongitud());
+        }
     }
 
     public static void Rombo(){
