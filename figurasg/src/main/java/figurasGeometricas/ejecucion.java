@@ -48,29 +48,6 @@ public class ejecucion {
         triangulo triangulo= new triangulo();
         rombo rombo = new rombo();
         int op;
-        System.out.println("Bienvenido a la figura del ROMBO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
-        op = lectura.nextInt();
-        if(op==1)
-        {
-            System.out.println("Ingrese la base del triangulo");
-            triangulo.setBase(lectura.nextDouble());
-            System.out.println("Ingrese la altura del triangulo");
-            triangulo.setAltura(lectura.nextDouble());
-            triangulo.calcularArea(triangulo.getBase(), triangulo.getAltura());
-        }
-        else if(op==2)
-        {
-            System.out.println("\nCalculo Perimetro\nIngrese la longitud de un lado");
-            triangulo.calcularPerimetro(lectura.nextDouble());
-        }
-    }
-
-    public static void triangulo(){
-        Scanner lectura = new Scanner(System.in);
-        decagono calcular = new decagono();
-        triangulo triangulo= new triangulo();
-        rombo rombo = new rombo();
-        int op;
         System.out.println("Bienvenido a la figura del TRIANGULO EQUILATERO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
         op = lectura.nextInt();
         if(op==1)
@@ -86,6 +63,29 @@ public class ejecucion {
             System.out.println("\nCalculo Perimetro\nIngrese la longitud de un lado");
             rombo.setLongitud(lectura.nextDouble());
             rombo.calcularPerimetro(rombo.getLongitud());
+        }
+    }
+
+    public static void triangulo(){
+        Scanner lectura = new Scanner(System.in);
+        decagono calcular = new decagono();
+        triangulo triangulo= new triangulo();
+        rombo rombo = new rombo();
+        int op;
+        System.out.println("Bienvenido a la figura del ROMBO \nseleccione la operacion que desea calcular\nelija 1 si desea realizar el calculo del area\nelija 2 si desea calcular el perimetro");
+        op = lectura.nextInt();
+        if(op==1)
+        {
+            System.out.println("Ingrese la base del triangulo");
+            triangulo.setBase(lectura.nextDouble());
+            System.out.println("Ingrese la altura del triangulo");
+            triangulo.setAltura(lectura.nextDouble());
+            triangulo.calcularArea(triangulo.getBase(), triangulo.getAltura());
+        }
+        else if(op==2)
+        {
+            System.out.println("\nCalculo Perimetro\nIngrese la longitud de un lado");
+            triangulo.calcularPerimetro(lectura.nextDouble());
         }
     }
     
