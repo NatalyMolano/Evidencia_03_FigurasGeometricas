@@ -1,6 +1,5 @@
-package figurasGeometricas;
 public class triangulo extends figura {
-    double base,altura,area,perimetro;
+    double base,altura,longitud,area,perimetro;
     public triangulo()
    {
     
@@ -41,7 +40,12 @@ public class triangulo extends figura {
     public void setAltura(double altura) {
         this.altura = altura;
     }
-    
+    public double getLongitud() {
+        return longitud;
+    }
+    public void setLongitud(double longitud) {
+        this.longitud = longitud;
+    }
     
     public void calcularArea(double b, double a)
     {
@@ -53,6 +57,5 @@ public class triangulo extends figura {
         perimetro = l*3;
         System.out.println("El perimetro del triangulo equilatero es: "+perimetro);
     }
-   
     
 }
